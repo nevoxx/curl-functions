@@ -8,7 +8,7 @@ if ( ! function_exists( 'curl_post' ) ) {
 	 */
 	function curl_post( $url, array $data = [] )
 	{
-		$ch = curl_init( $url );
+	    $ch = curl_init( $url );
 		curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
 		curl_setopt( $ch, CURLOPT_POSTFIELDS, http_build_query( $data ) );
 
